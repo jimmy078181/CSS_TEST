@@ -11,28 +11,62 @@
     <!Do not add a space between the property value and the unit. The correct way is: margin-left: 20px;>
 
     <style> /*Internal Style Sheet*/
-        body {
-            background-color: linen;
-            background-image: url("paper.gif");
-            background-repeat: repeat-x; /*只往x方向重複*/
-            background-repeat: no-repeat; /*不重複*/
-            background-position: right top;/*在用上*/
-            background-attachment: fixed; /*會一直固定在那邊*/ 
-            background: #ffffff url("img_tree.png") no-repeat right top;/*Background - Shorthand property 類似簡寫*/
-            }
-            
-        h1 {
-             color: maroon;
-             margin-left: 40px;
-        } 
+        
     </style>
 
 </head>
 <body>
 
   <h1 style="color:blue;margin-left:30px;">This is a heading</h1> <!Inline Styles>
+  <p class="dotted">A dotted border.</p>
+  <p class="dashed">A dashed border.</p>
+   <p class="solid">A solid border.</p>
+   <p class="double">A double border.</p>
+   <p class="groove">A groove border.</p>
+   <p class="ridge">A ridge border.</p>
+  <p class="inset">An inset border.</p>
+  <p class="outset">An outset border.</p>
+  <p class="none">No border.</p>
+  <p class="hidden">A hidden border.</p>
+  <p class="mix">A mixed border.</p>
 
 
-    
+  <h2>The border-width Property</h2>
+<p>This property specifies the width of the four borders:</p>
+
+<p class="one">Some text.</p>
+<p class="two">Some text.</p>
+<p class="three">Some text.</p>
+<p class="four">Some text.</p>
+<p class="five">Some text.</p>
+<p class="six">Some text.</p>
+<p class="seven">Some text.</p>
+
+<p><b>Note:</b> The "border-width" property does not work if it is used alone. 
+Always specify the "border-style" property to set the borders first.</p>
+
+
+<h2>The margin shorthand property - 4 values</h2>
+
+<div class="margin_shorthand">This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of 100px.</div>
+
+<div class="margin_auto">
+    This div will be horizontally centered because it has margin: auto;
+</div>
+
+<div class="margin_inherit">
+    <p class="margin_inherit">This paragraph has an inherited left margin (from the div element).</p>
+</div>
+
+<p>In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. Then, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+
+<h1 class="margin_collapse">Heading 1</h1>
+<h2 class="margin_collapse">Heading 2</h2>
+
+<h2>The padding shorthand property - 4 values</h2>
+<div class="padiing_shorthand">This div element has a top padding of 25px, a right padding of 50px, a bottom padding of 75px, and a left padding of 100px.</div>
+
+<div class="padiing_width">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
+
 </body>
-</html>>
+</html>
