@@ -7,6 +7,8 @@
 
 
     <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!External Style Sheet>
     <!Do not add a space between the property value and the unit. The correct way is: margin-left: 20px;>
 
@@ -67,6 +69,403 @@ Always specify the "border-style" property to set the borders first.</p>
 <div class="padiing_shorthand">This div element has a top padding of 25px, a right padding of 50px, a bottom padding of 75px, and a left padding of 100px.</div>
 
 <div class="padiing_width">The width of this div is 350px, even though it is defined as 300px in the CSS.</div>
+
+<p class="dotted">A dotted outline</p>
+<p class="dashed">A dashed outline</p>
+<p class="solid">A solid outline</p>
+<p class="double">A double outline</p>
+<p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+<p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+<p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+<p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+
+<p class="OutlineColor">A double green outline.</p>
+<p class="OutlineWidth">A medium outline.</p>
+<p class="Shorthandproperty">A 5px solid yellow outline.</p>
+<p class="OutlineOffset">This paragraph has an outline 15px outside the border edge.</p>
+<p class="Outlineinvert">A solid invert outline.</p>
+<div class="justify">
+    In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
+</div>
+
+<h1 class="overline">This is heading 1</h1>
+<h2 class="line-through">This is heading 2</h2>
+<h3 class="underline">This is heading 3</h3>
+
+<p class="uppercase">This is some text.</p>
+<p class="lowercase">This is some text.</p>
+<p class="capitalize">This is some text.</p>
+<p class="text-indent">In my younger and more vulnerable years my father gave me 
+    some advice that I've been turning over in my mind ever since.
+</p>
+<h1 class="letter-spacing">This is heading 1</h1>
+<h2 class="letter-spacing">This is heading 2</h2>
+<p class="small">
+        This is a paragraph with a smaller line-height.<br>
+        This is a paragraph with a smaller line-height.<br>
+</p>
+        
+<p class="big">
+        This is a paragraph with a bigger line-height.<br>
+        This is a paragraph with a bigger line-height.<br>
+</p>
+
+<p>This is the default text direction.</p>
+<p class="direction"><bdo dir="rtl">This is right-to-left text direction.</bdo></p>
+
+<h1 class="word-spacing">This is heading 1</h1>
+<h2 class="word-spacing">This is heading 2</h2>
+
+<h1 class="text-shadow">Text-shadow effect</h1>
+<p><b>Note:</b> Internet Explorer 9 and earlier do not support the text-shadow property.</p>
+
+<h1>CSS font-family</h1>
+<p class="serif">This is a paragraph, shown in the Times New Roman font.</p>
+<p class="sansserif">This is a paragraph, shown in the Arial font.</p>
+<p class="normal">This is a paragraph in normal style.</p>
+<p class="italic">This is a paragraph in italic style.</p>
+<p class="oblique">This is a paragraph in oblique style.</p>
+<h1 class="fontsizepx">This is heading 1</h1>
+<h1 class="fontsizeem">This is heading 1</h1>
+
+<p class="normal">This is a paragraph.</p>
+<p class="light">This is a paragraph.</p>
+<p class="thick">This is a paragraph.</p>
+<p class="thicker">This is a paragraph.</p>
+
+
+<h1 style="font-size:10vw;">Responsive Text</h1>
+<p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+<p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+<p class="normal">My name is Hege Refsnes.</p>
+<p class="small">My name is Hege Refsnes.</p>
+
+<p>Some Font Awesome icons:</p>
+<i class="fa fa-cloud"></i>
+<i class="fa fa-heart"></i>
+<i class="fa fa-car"></i>
+<i class="fa fa-file"></i>
+<i class="fa fa-bars"></i>
+<p>Styled Font Awesome icons (size and color):</p>
+<i class="fa fa-cloud" style="font-size:24px;"></i>
+<i class="fa fa-cloud" style="font-size:36px;"></i>
+<i class="fa fa-cloud" style="font-size:48px;color:red;"></i>
+<i class="fa fa-cloud" style="font-size:60px;color:lightblue;"></i>
+
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+
+<p><b><a class="acolor" href="default.asp" target="_blank">This is a link</a></b></p>
+
+<a href="default.asp" target="_blank">This is a link</a>
+
+<h2>Add a border to a table:</h2>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+<h2>Bordered Table Dividers</h2>
+<p>Add the border-bottom property to th and td for horizontal dividers:</p>
+
+
+<br>
+
+<table class="border-bottom">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+<div style="overflow-x:auto;">
+<!To create a responsive table, add a container element (like div) with
+ overflow-x:auto around the table element:>
+    <table style="width:200%;">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Adam</td>
+        <td>Johnson</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+        <td>67</td>
+      </tr>
+    </table>
+  </div>
+  
+
+
+  <p>Display a list of links as a horizontal menu:</p>
+
+<ul class="imgul">
+  <li class="imgli"><a href="/html/default.asp" target="_blank">HTML</a></li>
+  <li class="imgli"><a href="/css/default.asp" target="_blank">CSS</a></li>
+  <li class="imgli"><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+</ul>
+
+<span class="displayblock">A display property with a value of "block" results in</span> <span class="displayblock">a line break between the two elements.</span>
+<p>Display links as block elements:</p>
+
+<a class="displayblock" href="/html/default.asp" target="_blank">HTML</a>
+<a class="displayblock" href="/css/default.asp" target="_blank">CSS</a>
+<a class="displayblock" href="/js/default.asp" target="_blank">JavaScript</a>
+
+
+<div class="width">This div element has width: 500px;</div>
+<br>
+<div class="max_width">This div element has max-width: 500px;</div>
+<p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between 
+the two divs!</p>
+
+
+
+<p>An element with position: static; is not positioned in any special way; it is 
+        always positioned according to the normal flow of the page:</p>
+        
+<div class="static">
+        This div element has position: static;
+</div>
+
+
+<h2>position: relative;</h2>
+<p>An element with position: relative; is positioned relative to its normal position:</p>
+<div class="relative">
+This div element has position: relative;
+
+
+<div class="absolute">This div element has position: absolute;</div>
+</div>
+
+
+<h2>position: fixed;</h2>
+<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+<div class="fixed">
+This div element has position: fixed;
+</div>
+
+<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+<p>Note: IE/Edge 15 and earlier versions do not support sticky position.</p>
+
+<div class="sticky">I am sticky!</div>
+
+<div style="padding-bottom:100px">
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+<h1>This is a heading</h1>
+
+<div width="500px" height="500px" style="border:1px solid red">This div element has position: absolute;
+  <img class="absoluteimg" src="saber.png" width="50" height="50">
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+</div>
+
+
+<h2>CSS Overflow</h2>
+<p>By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:</p>
+<div class="overflowvisible">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+<div class="overflowhidden">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+<div class="overflowscroll">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+<div class="overflowauto">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+<p>overflow-x specifies what to do with the left/right edges of the content.<br>
+  overflow-y specifies what to do with the top/bottom edges of the content.</p>
+  
+<div class="overflo_x_y">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+<br>
+
+<p><img src="saber.png" class="floatright" alt="saber" style="width:170px;height:170px;margin-left:15px;">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+  <p>In this example, the image will float to the left in the paragraph, and the text in the paragraph will wrap around the image.</p>
+<p><img src="saber.png" class="floatleft" alt="saber" style="width:170px;height:170px;margin-left:15px;">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+  
+  <p>In this example, the image will be displayed just where it occurs in the text (float: none;).</p>
+  <p><img src="saber.png" class="floatnone" alt="saber" style="width:170px;height:170px;margin-left:15px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+    
+    <h2>With clear</h2>
+    <div class="div3left">div3</div>
+    <div class="div4clear">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+
+
+
+    <div class="clearfix" style="border: 3px solid #4CAF50;">
+      <img class="imgclearfixright" src="saber.png" alt="saber" width="170" height="170">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+    </div>
+
+    <div class="clearfixclearbothtable" style="border: 3px solid #4CAF50;">
+      <h2>With Clearfix</h2>
+      <img class="imgclearfixright" src="saber.png" alt="saber" width="170" height="170">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...</div>
+
+
+
+
+      
+<h2>Grid of Boxes</h2>
+<p>Float boxes side by side:</p>
+
+<div class="gridclearfix">
+  <div class="gridbox" style="background-color:#bbb">
+    <p>Some text inside the box.</p>
+  </div>
+  <div class="gridbox" style="background-color:#ccc">
+    <p>Some text inside the box.</p>
+  </div>
+  <div class="gridbox" style="background-color:#ddd">
+    <p>Some text inside the box.</p>
+  </div>
+</div>
+
+
+
+
+
+<h2>Images Side by Side</h2>
+<p>Float images side by side:</p>
+
+<div class="clearfiximg">
+  <div class="img-container">
+    <img src="saber.png" alt="Italy" style="width:100%">
+  </div>
+  <div class="img-container">
+    <img src="saber.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="img-container">
+    <img src="saber.png" alt="Mountains" style="width:100%">
+  </div>
+
+</div>
+
+
+
+<div class="flex-container">
+  <div class="box">Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.</div>
+  <div class="box">Box 2 - My height will follow Box 1.</div>
+</div>
+
+<p>Try to resize the browser window to see the flexible layout.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
+
+<h1>The display Property</h1>
+
+<h2>display: inline</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: inline-block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+
+
+<h1>Horizontal Navigation Links</h1>
+<p>By default, list items are displayed vertically. In this example we use display: inline-block to display them horizontally (side by side).</p>
+<p>Note: If you resize the browser window, the links will automatically break when it becomes too crowded.</p>
+
+
+<ul class="nav">
+  <li class="abcd" ><a href="#home">Home</a></li>
+  <li class="abcd" ><a href="#about">About Us</a></li>
+  <liclass="abcd" ><a href="#clients">Our Clients</a></li>    
+  <li class="abcd"><a href="#contact">Contact Us</a></li>
+</ul>
+
 
 </body>
 </html>

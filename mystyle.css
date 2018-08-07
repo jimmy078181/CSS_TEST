@@ -124,3 +124,502 @@ div.height {
  When you set the width and height properties of an element with CSS, 
  you just set the width and height of the content area. To calculate the full size of an element, 
  you must also add padding, borders and margins.*/
+
+ p {outline-color:red;}
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+
+p.OutlineColor {
+    border: 1px solid black;
+    outline-style: double;
+    outline-color: green;
+}
+p.OutlineWidth{
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: medium;
+}
+p.Shorthandproperty {outline: 5px solid yellow;}
+
+p.OutlineOffset {
+    margin: 30px;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+}
+p.Outlineinvert {
+    border: 1px solid yellow;
+    outline-style: solid;
+    outline-color: invert;
+}
+
+div.justify {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+}
+h1.overline {
+    text-decoration: overline;
+}
+h2.line-through {
+    text-decoration: line-through;
+}
+h3.underline{
+    text-decoration: underline;
+}
+p.uppercase {
+    text-transform: uppercase;
+}
+p.lowercase {
+    text-transform: lowercase;
+}
+p.capitalize {
+    text-transform: capitalize;
+}
+p.text-indent {
+    text-indent: 30px;
+}
+h1.letter-spacing {
+    letter-spacing: 3px;
+}
+h2.letter-spacing {
+    letter-spacing: -3px;
+}
+p.small {
+    line-height: 0.7;
+}
+p.big {
+    line-height: 1.8;
+}
+p.direction {
+    direction: rtl;
+}
+h1.word-spacing {
+    word-spacing: 10px;
+}
+
+h2.word-spacing {
+    word-spacing: -5px;
+}
+h1.text-shadow {
+    text-shadow: 3px 2px red;
+}
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p.normal {
+    font-style: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.oblique {
+    font-style: oblique;
+}
+h1.fontsizepx {
+    font-size: 40px;
+}
+h1.fontsizeem {
+    font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+p.normal {
+    font-weight: normal;
+}
+
+p.light {
+    font-weight: lighter;
+}
+
+p.thick {
+    font-weight: bold;
+}
+
+p.thicker {
+    font-weight: 800;
+}
+
+p.normal {
+    font-variant: normal;
+}
+
+p.small {
+    font-variant: small-caps;}/*In a small-caps font, all lowercase letters
+     are converted to uppercase letters. However, the converted uppercase letters 
+     appears in a smaller font size thanthe original uppercase letters in the text.*/
+
+a.acolor {
+    color: hotpink;
+}
+
+a:link {
+    color: red;
+    background-color: yellow;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+    background-color: cyan;
+    text-decoration: none;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: hotpink; 
+    background-color: lightgreen;
+    text-decoration: underline;
+    /*Note: a:hover MUST come after a:link and a:visited in the 
+    CSS definition in order to be effective.*/
+
+}
+/* selected link */
+a:active {
+    color: blue;
+    background-color: hotpink;
+    text-decoration: underline;
+    /*Note: a:active MUST come after a:hover in the 
+    CSS definition in order to be effective.*/
+}
+
+a:link, a:visited { /*button效果link*/
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: red;
+}
+table,th,td{
+    
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse; /*只有一條線的框*/
+    width: 10%;
+}
+
+th {
+    height: 50px;
+    text-align: left; /*置左*/
+    padding: 15px;
+}
+td{
+height: 50px;
+padding: 15px;
+vertical-align: bottom; /*在td內的字置底*/
+}
+
+table.border-bottom {
+    border-collapse: collapse;
+    width: 100%;
+   
+}
+
+.border-bottom th,.border-bottom td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;/*底線分隔線 horizontal dividers*/
+    
+}
+tr:hover {background-color:#f5f5f5;}  
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(odd) {background-color: rgb(13, 6, 41);color:white;}
+
+
+li.imgli {
+    display: inline;
+}/*Setting the display property of an element only changes how the element is displayed,
+ NOT what kind of element it is. So, an inline element with display: block; 
+ is not allowed to have other block elements inside it.
+ 變成並排*/
+ span.displayblock {
+    display: block; /*變有換行*/
+    border:1px solid red;
+}
+
+a.displayblock{
+    display: block; /*範圍會變一成一整條條*/
+    border:1px solid red;
+}
+
+h1.hiddennone { /*隱藏*/ 
+    display: none;
+}
+h1.hiddenvisibility { 
+    /*However, the element will still take up the same space as before. 
+    The element will be hidden, but still affect the layout:*/
+    visibility: hidden;
+}
+
+div.width {
+    width:500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+
+div.max_width {
+    max-width:500px; /*最大500但是會配合螢幕大小縮放*/
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+
+div.relative {  
+    position: relative; /*會跟上面的element保持30px*,relative to its normal position.*/
+    top: 30px;
+    width: 600px;
+    height: 200px;
+    border: 3px solid #73AD21; 
+}
+
+div.absolute {
+    position: absolute;/*( relative to the HTML page.*/
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+    /* 根據父容器 而且父容器必須有屬性 position: relative才可以,若沒有父容器,那就是根據body( relative to the HTML page.),is positioned relative to the nearest positioned ancestor
+     (instead of positioned relative to the viewport, like fixed).
+However; if an absolute positioned element has no positioned ancestors, 
+it uses the document body, and moves along with page scrolling.*/
+}
+
+div.fixed {
+    position: fixed;/*relative to the browser window ,在視窗的哪裡決定後就不會動了*/
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+    /* 根據視窗(bowser)決定位子,is positioned relative to the viewport, which means it always stays in the same place
+     even if the page is scrolled. The top, right,
+      bottom, and left properties are used to position the element.
+A fixed element does not leave a gap in the page where it would normally have been located.
+Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:*/
+}
+
+div.sticky { /*根據滾輪移動,和fixed有點不同, is positioned based on the user's scroll position.
+    A sticky element toggles between relative and fixed, depending on the scroll position.
+    It is positioned relative until a given offset position is met in the viewport -
+    then it "sticks" in place (like position:fixed).*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; /*top, right, bottom or left 必須指定一個*/
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    /* You must also specify at least one of top, right, 
+    bottom or left for sticky positioning to work.*/
+  }
+
+  img.absoluteimg{
+    position: absolute;
+    left:0;
+        z-index: -1;
+}
+
+div.overflowvisible {
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: visible;
+}
+
+div.overflowhidden{
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: hidden;
+}
+
+div.overflowscroll {
+    background-color: #eee;
+    width: 200px;
+    height: 100px;
+    border: 1px dotted black;
+    overflow: scroll;
+}
+
+div.overflowauto{ 
+    /*The auto value is similar to scroll,
+     only it add scrollbars when necessary:*/
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: auto;
+}
+
+div.overflo_x_y {
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+img.floatright {
+    float: right;
+}
+
+img floatleft{
+    float: left;
+}
+
+img floatnone{
+    float: none;
+}
+
+.div3left {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+}
+
+.div4clear {
+    /*The most common way to use the clear property is after you have used
+     a float property on an element.*/
+    border: 1px solid red;
+    clear: left;
+}
+
+
+.clearfix {
+    overflow: auto;
+}
+
+.imgclearfixright {
+    float: right;
+}
+
+.clearfixclearbothtable::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.gridbox {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.gridclearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.img-container {
+    float: left;
+    width: 33.33%;
+    height:300px;
+    padding: 1px;
+}
+
+.clearfiximg::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container .box {
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+
+  span.a {
+    display: inline; /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+}
+
+span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;        
+    background-color: yellow; 
+}
+
+span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;        
+    background-color: yellow; 
+}
+
+
+.nav {
+    background-color: yellow; 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li.abcd {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+  
