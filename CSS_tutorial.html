@@ -419,13 +419,13 @@ This div element has position: fixed;
 <p>Float images side by side:</p>
 
 <div class="clearfiximg">
-  <div class="img-container">
+  <div class="img_container">
     <img src="saber.png" alt="Italy" style="width:100%">
   </div>
-  <div class="img-container">
+  <div class="img_container">
     <img src="saber.png" alt="Forest" style="width:100%">
   </div>
-  <div class="img-container">
+  <div class="img_container">
     <img src="saber.png" alt="Mountains" style="width:100%">
   </div>
 
@@ -467,5 +467,221 @@ This div element has position: fixed;
 </ul>
 
 
+
+<h2>Center Align Elements</h2>
+<p>To horizontally center a block element (like div), use margin: auto;</p>
+<div class="centermarginauto">
+  <p><b>Note: </b>Using margin:auto will not work in IE8, unless a !DOCTYPE is declared.</p>
+</div>
+
+
+<h2>Center Text</h2>
+
+<div class="centertext_align_center">
+  <p>This text is centered.</p>
+</div>
+
+<h2>Center an Image</h2>
+<p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+<img class="image_block_margin_leftright_auto" src="saber.png" alt="saber">
+
+
+
+<h2>Right Align</h2>
+<p>An example of how to right align elements with the position property:</p>
+<div class="right_align_absolute">
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+</div>
+
+
+<h2>Right Align</h2>
+<p>An example of how to right align elements with the float property:</p>
+
+<div class="right_float_align">
+  <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+  </p>
+</div>
+
+
+<h2>Center Vertically</h2>
+<p>In this example, we use the padding property to center the div element vertically:</p>
+<div class="padding_and_textalignTocenter">
+  <p>I am vertically centered.</p>
+</div>
+
+
+
+<h2>Centering</h2>
+<p>In this example, we use the line-height property with a value that is equal to the height property to center the div element:</p>
+
+<div class="center_uselineheight">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+
+
+
+<h2>Centering</h2>
+<p>In this example, we use positioning and the transform property to vertically and horizontally center the div element:</p>
+
+<div class="center_useposition_transform">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+
+<p>Note: The transform property is not supported in IE8 and earlier versions.</p>
+
+<div class="Descendantselect">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span>
+</div>
+
+<br>
+
+<div class="ChildSelect">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+</div>
+
+<br>
+
+<div class="AdjacentSiblingSelect">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragraph 4. Not in a div.</p>
+
+<br>
+
+<p>Paragraph 1.</p>
+
+<div class="GeneralSibingSelect">
+  <code>Some code.</code>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+
+<br>
+
+<p ><b><a class="anchor" href="default.asp" target="_blank">This is a link</a></b></p>
+<p ><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p ><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+<br>
+
+<p>Mouse over the div element below to change its background color:</p>
+<div class="divhover">Mouse Over Me</div>
+
+
+
+<div class="hoverTochange_p" >Hover over me to show the p element
+  <p>Tada! Here I am!</p>
+</div>
+
+
+  <p class="elementfirst-child_is_p">This is some text.</p>
+  <p class="elementfirst-child_is_p">This is some text.</p>
+  <p class="elementfirst-child_is_p"><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+
+
+<p class="pelementfirst-child_is_i" >I am a<i>strong</i> person. I am a <i>strong</i> person.</p>
+<p class="pelementfirst-child_is_i">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p class="pelementfirst-child_is_i"><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+
+
+<p class="All_Ielement_under_p:first-child">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p class="All_Ielement_under_p:first-child">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p class="All_Ielement_under_p:first-child"><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+
+<p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+<p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+<p><b>Note:</b> IE8 supports the :lang pseudo class only if a !DOCTYPE is specified.</p>
+
+
+<form action="/action_page.php" method="get">
+  First name: <input  class="Pseudo_class_focus" type="text" name="fname"><br>
+  Last name: <input  class="Pseudo_class_focus" type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+<p class="Pseudo_elementfirst_line">You can use the ::first-line pseudo-element to add a special 
+  effect to the first line of a text. Some more text. And even more, 
+  and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+<p class="Pseudo_elementfirst_letter">You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+
+<h1 class="Pseudo_element_before">This is a heading</h1>
+<p>The ::before pseudo-element inserts content before the content of an element.</p>
+<h1 class="Pseudo_element_after">This is a heading</h1>
+
+<h1>Select some text on this page:</h1>
+<p>This is a paragraph.</p>
+<div>This is some text in a div element.</div>
+
+
+<h1>Image Transparency</h1>
+<p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+<p>Image with 50% opacity:</p>
+<img class="opacity" src="saber.png" alt="saber" width="170" height="100">
+
+<h1>Transparent Box</h1>
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+<div class="first"><p>opacity 0.1</p></div>
+<div class="second"><p>opacity 0.3</p></div>
+<div class="third"><p>opacity 0.6</p></div>
+<div><p>opacity 1 (default)</p></div>
+
+<p>With RGBA color values:</p>
+<div class="rgbafirst"><p>10% opacity</p></div>
+<div class="rgbasecond"><p>30% opacity</p></div>
+<div class="rgbathird"><p>60% opacity</p></div>
+<div class="rgba"><p>default</p></div>
+
+<div class="background">
+    <div class="transbox">
+      <p>This is some text that is placed in the transparent box.</p>
+    </div>
+  </div>
+
+
+
+  <p>A styled select menu.</p>
+
+  <form>
+    <select id="country" name="country">
+      <option value="au">Australia</option>
+      <option value="ca">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  </form>
+
+
+
+
+<!grid/////////////////////////////////////////////////////////>
+<h1>The grid-area Property</h1>
+
+<p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+<p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Main</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>
+  <!grid/////////////////////////////////////////////////////////>
 </body>
 </html>
